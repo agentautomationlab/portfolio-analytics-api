@@ -23,6 +23,7 @@ builder.Services.AddCors(options =>
             "http://localhost:3000",
             "https://your-portfolio-domain.com" // Replace with your actual domain
         )
+        .SetIsOriginAllowedToAllowWildcardSubdomains()
         .AllowAnyMethod()
         .AllowAnyHeader();
     });
